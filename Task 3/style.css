@@ -59,3 +59,20 @@
   border-radius: 5px;
   background-color: #fff;
 }
+
+#output{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.userCard{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.userCard > img{
+  width: 200px;
+}
