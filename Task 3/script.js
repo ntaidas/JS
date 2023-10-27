@@ -24,7 +24,7 @@ document.querySelector("#btn").addEventListener("click", () => {
       users.forEach((user) => {
         /// kuriame userio kortele
         const userCard = document.createElement("div");
-        userCard.classList.add('userCard')
+        userCard.classList.add('userCard');
 
         const userLogin = document.createElement("h2");
         const userLoginTxt = document.createTextNode(user.login);
