@@ -15,7 +15,6 @@ fetch(ENDPOINT)
     .then(res => res.json())
     .then(data => {
         data.forEach(make => {
-
             const makeCard = document.createElement('div');
             makeCard.classList.add('brand');
 
@@ -24,7 +23,6 @@ fetch(ENDPOINT)
             header.appendChild(headerTxt);
 
             const modelContainer = document.createElement('ul');
-
             makeCard.append(header, modelContainer);
 
             make.models.forEach(model => {

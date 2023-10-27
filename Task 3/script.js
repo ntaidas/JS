@@ -12,17 +12,12 @@ Pastaba: Informacija apie user'į (jo kortelė) bei turi turėti bent minimalų 
 
 const ENDPOINT = "https://api.github.com/users";
 
-/// pagriebiame mygtuka ir pridedam jam funkcionaluma
 document.querySelector("#btn").addEventListener("click", () => {
-  /// panaikiname #message elementa
   document.querySelector("#message").remove();
-  /// fetchiname duomenis is api
-  fetch("https://api.github.com/users")
+  fetch(ENDPOINT)
     .then((res) => res.json())
     .then((users) => {
-      /// iteruojam per duomenu masyva
       users.forEach((user) => {
-        /// kuriame userio kortele
         const userCard = document.createElement("div");
         userCard.classList.add('userCard');
 
@@ -35,7 +30,6 @@ document.querySelector("#btn").addEventListener("click", () => {
         userImg.setAttribute("alt", user.login);
 
         userCard.append(userLogin, userImg);
-        /// atvaizduojame userio kortele ekrane
         document.querySelector("#output").appendChild(userCard);
       });
     });

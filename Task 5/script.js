@@ -28,5 +28,5 @@ function filterAdults(masyvas){
   return masyvas.filter(user => user.age >= 18);
 }
 
-console.log(filterDogOwners(users))
-console.log(filterAdults(users))
+console.log(filterDogOwners(users));
+console.log(filterAdults(users));

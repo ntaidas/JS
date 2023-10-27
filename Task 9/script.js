@@ -17,7 +17,7 @@ class Movie{
     }
 }
 
-const filmas1 = new Movie('parazitas','as',1000000000000000000);
-const filmas2 = new Movie('parazitas2','tu',10)
-console.log(filmas1.wasExpansive())
-console.log(filmas2.wasExpansive())
+const filmas1 = new Movie('parazitas','as',100000000000000);
+const filmas2 = new Movie('parazitas2','tu',10);
+console.log(filmas1.wasExpansive());
+console.log(filmas2.wasExpansive());
