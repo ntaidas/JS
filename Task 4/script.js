@@ -17,7 +17,7 @@ fetch(ENDPOINT)
         data.forEach(make => {
 
             const makeCard = document.createElement('div');
-            makeCard.classList.add('brand')
+            makeCard.classList.add('brand');
 
             const header = document.createElement('h1');
             const headerTxt  = document.createTextNode(make.brand);
