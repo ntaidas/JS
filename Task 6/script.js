@@ -31,6 +31,3 @@ function getUsersNames(masyvas){
   masyvas.forEach(user => userNames.push(user.name));
   return userNames;
 }
-
-console.log(getUserAverageAge(users));
-console.log(getUsersNames(users));  

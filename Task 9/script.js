@@ -16,8 +16,3 @@ class Movie{
        return this.budget > 100000000? true:false;
     }
 }
-
-const filmas1 = new Movie('parazitas','as',100000000000000);
-const filmas2 = new Movie('parazitas2','tu',10);
-console.log(filmas1.wasExpansive());
-console.log(filmas2.wasExpansive());

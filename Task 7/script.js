@@ -16,5 +16,3 @@ function showObjectKeys(objektas){
   Object.keys(objektas).forEach(key => keysArray.push(key));
   return keysArray;
 }
-
-console.log(showObjectKeys(audi));
